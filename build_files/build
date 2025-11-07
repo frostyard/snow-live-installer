@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -ouex pipefail
+
+# set default target to graphical
+systemctl set-default graphical.target
+systemctl enable snow-linux-live-setup.service
